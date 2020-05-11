@@ -18,9 +18,9 @@ hooks:
         runas: ec2-user
     ApplicationStart:
       - location: start.sh # 새로 배포한 스프링부트 어플리케이션 실핸
-        timeout: 60
+        timeout: 100
         runas: ec2-user
     ValidateService:
       - location: health.sh # 새 스프링부트가 정상적으로  실행됐는지 확인
-        timeout: 60
+        timeout: 100
         runas: ec2-user

@@ -9,7 +9,7 @@ function find_idle_profile()
   then
     CURRENT_PROFILE=real2
   else
-    CURRENT_PROFILE=$(curl -s http://localhost/profile)
+    CURRENT_PROFILE=$(curl -s http://localhost/profile) # real1 또는 real2
   fi
   
   if [ ${CURRENT_PROFILE}==real1 ]
