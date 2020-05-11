@@ -19,7 +19,7 @@ public class ProfileController {
 		List<String>profiles = Arrays.asList(env.getActiveProfiles()); // 현재 실행중인 ActiveProfile을 모두 가져옴
 		String defaultProfile = profiles.isEmpty()?"default":"profiles.get(0)";
 		List<String>realProfiles = Arrays.asList("real", "real1", "real2");
-		return profiles.stream().filter(realProfiles::contains).findAny().orElse(defaultProfile);	
+		return profiles.stream().filter(realProfiles::contains).findAny().orElse(defaultProfile);
 		
 	}
 	
