@@ -21,7 +21,7 @@ public class IndexControllerTest {
 		String html = this.restTemplate.getForObject("/", String.class);
 		System.out.println(html);
 		
-		Assertions.assertThat(html).contains("<h1>스프링 부트로 시작하는 웹 서비스 - AWS 배포</h1>");
+		Assertions.assertThat(html).contains("<h1>스프링 부트로 시작하는 웹 서비스(ver1.0) - AWS 배포</h1>");
 	}
 
 }
